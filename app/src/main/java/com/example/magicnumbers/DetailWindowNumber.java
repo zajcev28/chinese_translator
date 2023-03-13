@@ -57,7 +57,7 @@ public class DetailWindowNumber extends AppCompatActivity {
         float yInches= metrics.heightPixels/metrics.ydpi;
         float xInches= metrics.widthPixels/metrics.xdpi;
         double diagonalInches = Math.sqrt(xInches*xInches + yInches*yInches);
-        if (diagonalInches>=3.5 && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ){
+        if (diagonalInches>=6.5 && getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ){ // 6.5" tablets
             setContentView(R.layout.activity_detail_window_tablets);
             TextView tvName = findViewById(R.id.textViewNameTablet);
             TextView tvText = findViewById(R.id.textViewTextTablet);
